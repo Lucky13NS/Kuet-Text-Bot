@@ -26,10 +26,17 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  
+  &:hover {
+    scale: 1.3;
+    originX: 0;
+    transition: 0.4s all ease;
 
+  }
   &.active {
     color: rgba(1, 176, 65, 1);
   }
+
 `;
 
 export const Bars = styled(FaBars)`
@@ -51,6 +58,7 @@ export const NavMenu = styled.div`
   align-items: center;
   margin-right: -24px;
   white-space: nowrap; 
+
   @media screen and (max-width: 820px) {
     display: none;
   }
