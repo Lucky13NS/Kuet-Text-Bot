@@ -4,6 +4,7 @@ import{ CssBaseline } from '@mui/material';
 
 import Image from '../../images/Hero-Banner.png';
 
+
 const styles = {
     BGContainer: {
         minHeight: '80vh',
@@ -17,7 +18,8 @@ const heroSection= () => {
   return (
     <div>
         <Paper style={styles.BGContainer}>
-             <CssBaseline />
+          sGNsjgnn
+          <CssBaseline />
         </Paper>
     </div>
 

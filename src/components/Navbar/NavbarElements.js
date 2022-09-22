@@ -3,12 +3,19 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: space-between;
   padding: .5rem calc((130vw - 1000px) / 10);
-  z-index: 5;
+  z-index: 10;
+  top: 0;
+  position: sticky;
+
+  @media screen and (max-width: 1060px) {
+    transition: 1s all ease;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -21,7 +28,7 @@ export const NavLink = styled(Link)`
   cursor: pointer;
 
   &.active {
-    color: #15cdfc;
+    color: rgba(1, 176, 65, 1);
   }
 `;
 
@@ -58,13 +65,31 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLinkToSignin = styled(Link)`
   border-radius: 40px;
   background: rgba(1, 176, 65, 1);
   padding: 3px 24px;
   color: #fff;
   outline: none;
   border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  margin-left: 30px;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  }
+`;
+
+export const NavBtnLinkToLogin = styled(Link)`
+  border-radius: 40px;
+  padding: 3px 24px;
+  color: #fff;
+  outline: none;
+  border: 2px solid black;
+  border-color: rgba(1, 176, 65, 1);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;

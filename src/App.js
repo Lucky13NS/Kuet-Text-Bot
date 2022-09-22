@@ -3,8 +3,7 @@ import Navbar from './/components/Navbar/index';
 import {
     BrowserRouter as Router,
     Routes,
-    Route,
-    Link
+    Route
   } from "react-router-dom";
 import Hero_section from './components/pages/hero-section';
 

@@ -1,24 +1,34 @@
 import React from 'react';
+import { useState, useEffect} from 'react';
 import {
   Nav,
   NavLink,
   Bars,
   NavMenu,
-  LoginBtn,
-  SigninBtn,
-  NavBtnLink,
-  Logo,
-  NavBtn
+  NavBtnLinkToSignin,
+  NavBtnLinkToLogin
 } from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if(Window.scrolly >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavLink to='/'>
 
             <img src={require('../../images/logo.png')} alt='logo' />
-
 
         </NavLink>
         <Bars />
@@ -42,8 +52,8 @@ const Navbar = () => {
             ABOUT US
           </NavLink>
           {/* Second Nav */}
-          <NavBtnLink to='/login'>LOGIN</NavBtnLink>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+          <NavBtnLinkToLogin to='/login'>LOGIN</NavBtnLinkToLogin>
+          <NavBtnLinkToSignin to='/signin'>Sign In</NavBtnLinkToSignin>
         </NavMenu>
         {/* <NavBtn>
           <NavBtnLink to='/login'>LOGIN</NavBtnLink>
