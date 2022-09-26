@@ -5,7 +5,7 @@ import {
     Routes,
     Route
   } from "react-router-dom";
-import Hero_section from './components/pages/hero-section';
+import HeroSection from './/components/Hero-section/hero-section';
 
 
 function App(){
@@ -14,10 +14,10 @@ function App(){
             <Router>
                 <Navbar />
                 <Routes>
-                <Route exact path="/" element={<Hero_section/>} />
+                <Route exact path="/" element={<HeroSection/>} />
                 </Routes>
                 <Routes>
-                <Route path="/home" element={<Hero_section/>} />
+                <Route path="/home" element={<HeroSection/>} />
                 </Routes>
             </Router>
         )

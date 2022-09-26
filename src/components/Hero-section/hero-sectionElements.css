@@ -1,0 +1,81 @@
+
+ .heroImage{
+    background-image: url("../../images/Hero-Banner.png"); 
+     height: 70vh; 
+    width: 100%; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.Container {
+    position: absolute;
+    color: aliceblue;
+    z-index: 100;
+    bottom: 2rem;
+}
+
+ /* TEXT COLOR */
+
+.TEX {
+    color: #01B041;
+}
+.BOT {
+    color: #AED42D;
+}
+.academic {
+    color: #FFDC00;
+}
+        /* END */
+
+.banner {
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-image: url('../../images/Hero-Banner.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto; 
+    width: 100%; 
+  }
+  .banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: aliceblue;
+  }
+  .banner h2 {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    color: white;
+  }
+  .banner button {
+    background: transparent;
+    border: 1px solid #FFDC00;
+    filter: drop-shadow(2px 2px 10px #FAFF00);
+    border-radius: 5px;
+    line-height: 22px;
+    color:aliceblue;
+  }
+
+  .banner img {
+    animation: updown 3s linear infinite;
+    margin-left: 60%;
+  }
+  @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  }
+
+

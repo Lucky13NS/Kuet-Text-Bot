@@ -3,13 +3,13 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({ scrollNav }) => (scrollNav ? 'blue' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
   justify-content: space-between;
   padding: .5rem calc((130vw - 1000px) / 10);
-  z-index: 10;
+  z-index: 1;
   top: 0;
   position: sticky;
 
