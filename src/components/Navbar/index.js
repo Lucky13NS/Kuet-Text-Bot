@@ -1,26 +1,30 @@
 import React from 'react';
 import { useState, useEffect} from 'react';
+import {FaBars} from 'react-icons/fa'
 import {
   Nav,
   NavLink,
   Bars,
   NavMenu,
   NavBtnLinkToSignin,
-  NavBtnLinkToLogin
+  NavBtnLinkToLogin,
+  MobileIcon
 } from './NavbarElements';
+import Sidebar from '../Sidebar/index';
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
-    if(Window.scrolly >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
+      if(window.scrollY >= 250) {
+          setScrollNav(true)
+      } else {
+          setScrollNav(false)
+      }
   }
+
   useEffect(() => {
-    window.addEventListener('scroll', changeNav);
+      window.addEventListener('scroll', changeNav)
   }, []);
 
   return (
@@ -31,7 +35,11 @@ const Navbar = ({ toggle }) => {
             <img src={require('../../images/logo.png')} alt='logo' />
 
         </NavLink>
-        <Bars />
+
+        <MobileIcon onClick={toggle}>
+                        <FaBars />
+        </MobileIcon>
+        {/* <Bars /> */}
         <NavMenu>
           <NavLink to='/home' activeStyle>
             HOME
@@ -55,10 +63,6 @@ const Navbar = ({ toggle }) => {
           <NavBtnLinkToLogin to='/login'>LOGIN</NavBtnLinkToLogin>
           <NavBtnLinkToSignin to='/signin'>Sign In</NavBtnLinkToSignin>
         </NavMenu>
-        {/* <NavBtn>
-          <NavBtnLink to='/login'>LOGIN</NavBtnLink>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-        </NavBtn> */}
       </Nav>
     </>
   );

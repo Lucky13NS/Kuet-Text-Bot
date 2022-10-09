@@ -3,7 +3,7 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? 'blue' : 'transparent')};
+  background: ${({ scrollNav }) => (scrollNav ? 'rgba(0,0,0,0.5)' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -51,12 +51,12 @@ export const Bars = styled(FaBars)`
     font-size: 1.8rem;
     cursor: pointer;
   }
+
 `;
 
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
   white-space: nowrap; 
 
   @media screen and (max-width: 820px) {
@@ -108,3 +108,18 @@ export const NavBtnLinkToLogin = styled(Link)`
     color: #010606;
   }
 `;
+
+export const MobileIcon = styled.div`
+    display: none;
+
+    @media screen and (max-width: 820px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+    }
+`
