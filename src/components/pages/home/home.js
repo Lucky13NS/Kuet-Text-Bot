@@ -30,13 +30,14 @@ import './home.css';
 
                         <a href='/home'>
                         <div class="card">
+
                                 <div class="card-image card-1">
                                     <div class="card-text">
                                         SLIDES & BOOKS
                                     </div >
                                 </div>
-
                             </div>
+
                         </a>
 
                         <a href='/home'>
@@ -76,7 +77,7 @@ import './home.css';
 
                 <div className='cardBg'>
                     <div className='haderTxt'>
-                        ACADEMIC FILES
+                        EXPLORE
                     </div>
                         <section class='container'>
 
@@ -121,6 +122,13 @@ import './home.css';
                             </div>
                         </a>    
                         </section>                     
+                </div>
+
+                {/* End of card section */}
+
+
+                <div className='green-img'>
+
                 </div>
 
             </div>
