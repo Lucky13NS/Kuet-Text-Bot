@@ -61,7 +61,7 @@ const Navbar = ({ toggle }) => {
           </NavLink>
           {/* Second Nav */}
           <NavBtnLinkToLogin to='/login'>LOGIN</NavBtnLinkToLogin>
-          <NavBtnLinkToSignin to='/signin'>Sign In</NavBtnLinkToSignin>
+          <NavBtnLinkToSignin to='/signin'>SIGN IN</NavBtnLinkToSignin>
         </NavMenu>
       </Nav>
     </>

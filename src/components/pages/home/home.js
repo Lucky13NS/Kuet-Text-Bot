@@ -4,7 +4,7 @@ import HeroSection from '../../Hero-section/hero-section';
 import Navbar from '../../Navbar';
 import Sidebar from '../../Sidebar';
 import './home.css';
-
+import Card from '../../Home-card/home-card';
   const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -20,115 +20,45 @@ import './home.css';
 
             <div className='Bg'>
 
-                        {/* Card row-1 */}
+                <Card />
 
-                <div className='cardBg'>
-                    <div className='haderTxt'>
-                        ACADEMIC FILES
+            <div className='watch'>
+
+                <div id="time">
+                    <div className='circle'>
+                        <div className='dots sec_dot'></div>
+                        <svg>
+                            <circle cx="120" cy="120" r="120" id="ss" className='c1'></circle>
+                        </svg>
                     </div>
-                        <section class='container'>
 
-                        <a href='/home'>
-                        <div class="card">
+                    <div className='circle' >
+                        <div className='dots min_dot'></div>
+                        <svg>
+                            <circle cx="100" cy="100" r="100" id="mm" className='c2'></circle>
+                        </svg>
+                    </div>
 
-                                <div class="card-image card-1">
-                                    <div class="card-text">
-                                        SLIDES & BOOKS
-                                    </div >
-                                </div>
-                            </div>
+                    <div className='circle'>
+                        <div className='dots hr_dot'></div>
+                        <svg>
+                            <circle cx="80" cy="80" r="80" id="hh" className='c3'></circle>
+                        </svg>
+                    </div>
 
-                        </a>
 
-                        <a href='/home'>
-                        <div class="card">
-                                <div class="card-image card-2">
-                                    <div class="card-text">
-                                        NOTES
-                                    </div>
-                                </div>    
-                            </div>
-                        </a>
 
-                        <a href='/home'>
-                        <div class="card">
-                                <div class="card-image card-3">
-                                    <div class="card-text">
-                                        RECENT DRIVES
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
 
-                        <a href='/home'>
-                        <div class="card">
-                                <div class="card-image card-4">
-                                    <div class="card-text">
-                                        OTHER DOCS
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
 
-                        </section>                     
+
                 </div>
 
-                        {/* Card row-2 */}
+            </div>
 
-                <div className='cardBg'>
-                    <div className='haderTxt'>
-                        EXPLORE
-                    </div>
-                        <section class='container'>
 
-                        <a href='/home'>
-                            <div class="card">
-                                <div class="card-image card-5">
-                                
-                                    <div class="card-text">
-                                        SLIDES & BOOKS
-                                    </div >
-                                </div>
-                            </div>
-                         </a>   
-
-                        <a href='/home'>
-                            <div class="card">
-                                <div class="card-image card-6">
-                                    <div class="card-text">
-                                        NOTES
-                                    </div>
-                                </div>    
-                            </div>
-                        </a>
-
-                        <a href='/home'>
-                            <div class="card">
-                                <div class="card-image card-7">
-                                    <div class="card-text">
-                                        RECENT DRIVES
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href='/home'>
-                            <div class="card">
-                                <div class="card-image card-8">
-                                    <div class="card-text">
-                                        OTHER DOCS
-                                    </div>
-                                </div>
-                            </div>
-                        </a>    
-                        </section>                     
-                </div>
-
-                {/* End of card section */}
 
 
                 <div className='green-img'>
-
                 </div>
 
             </div>

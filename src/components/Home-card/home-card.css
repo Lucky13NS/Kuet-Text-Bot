@@ -1,0 +1,138 @@
+.homeContainer {
+    margin-top: 0;
+}
+
+.cardBg {
+    background: linear-gradient(rgba(66, 71, 80, 1),rgba(0,0,0,0.5));
+    height: auto;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 2%;
+    margin-bottom: 100px;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+}
+@media (max-width: 720px) {
+    .cardBg {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.cardBg:hover {
+    transform: scale(1.01);
+}
+.haderTxt {
+    color: #01B041;
+    text-shadow: 1px;
+    text-align: center;
+    padding: 25px;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.card {
+    position: relative;
+     background: rgba(48, 50, 52, 1); 
+    /* background: rgba(0, 0, 0, 1); */
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+@media (max-width: 720px) {
+    .card {
+        scale: 0.8;
+    }
+}
+.card::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120%;
+    background: linear-gradient(#00ccff,#d400d4);
+    animation: card-animation 4s linear infinite;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    background: rgba(48, 50, 52, 1);  
+    border-radius: 16px;
+    z-index: 1;
+}
+.card:hover {
+    transform: scale(1.1);
+    background: whitesmoke;
+}
+
+
+@keyframes card-animation
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+} 
+
+.card-image {
+
+    width: 100%;
+    margin-left: 14px;
+    margin-right: auto;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.card-1 {
+    background-image: url('../.././images/card-image-1.png');
+}
+.card-2 {
+    background-image: url('../.././images/card-image-2.png');
+}
+.card-3 {
+    background-image: url('../.././images/card-image-3.png');
+}
+.card-4 {
+    background-image: url('../.././images/card-image-4.png');
+}
+
+
+.card-5 {
+    background-image: url('../.././images/card-image-5.png');
+}
+.card-6 {
+    background-image: url('../.././images/card-image-6.png');
+}
+.card-7 {
+    background-image: url('../.././images/card-image-7.png');
+}
+.card-8 {
+    background-image: url('../.././images/card-image-8.png');
+}
+.card-text {
+    text-align: center;
+    margin-top: 300px;
+    font-size: 15px;
+    color: aliceblue;
+    margin-left: -20px;
+    margin-bottom: 50px;
+}
+
