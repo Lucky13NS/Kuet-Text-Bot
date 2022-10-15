@@ -5,6 +5,7 @@ import Navbar from '../../Navbar';
 import Sidebar from '../../Sidebar';
 import './home.css';
 import Card from '../../Home-card/home-card';
+import Clock from '../../Clock/Clock';
   const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -22,40 +23,7 @@ import Card from '../../Home-card/home-card';
 
                 <Card />
 
-            <div className='watch'>
-
-                <div id="time">
-                    <div className='circle'>
-                        <div className='dots sec_dot'></div>
-                        <svg>
-                            <circle cx="120" cy="120" r="120" id="ss" className='c1'></circle>
-                        </svg>
-                    </div>
-
-                    <div className='circle' >
-                        <div className='dots min_dot'></div>
-                        <svg>
-                            <circle cx="100" cy="100" r="100" id="mm" className='c2'></circle>
-                        </svg>
-                    </div>
-
-                    <div className='circle'>
-                        <div className='dots hr_dot'></div>
-                        <svg>
-                            <circle cx="80" cy="80" r="80" id="hh" className='c3'></circle>
-                        </svg>
-                    </div>
-
-
-
-
-
-
-                </div>
-
-            </div>
-
-
+                <Clock />
 
 
                 <div className='green-img'>
@@ -64,6 +32,7 @@ import Card from '../../Home-card/home-card';
             </div>
 
         </>
+
     )
 }
 

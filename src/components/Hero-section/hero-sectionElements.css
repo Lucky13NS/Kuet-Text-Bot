@@ -3,7 +3,7 @@
     position: absolute;
     color: aliceblue;
     z-index: 100;
-    bottom: 2rem;
+    /* bottom: 2rem; */
 }
 
  /* TEXT COLOR */
@@ -47,6 +47,7 @@
     0 0 0 8px rgba(255,255,255,0.1),
     0 0 20px rgba(255,255,255,1); 
     animation: shootingStar 1.5s linear infinite;
+
   
   }
 
@@ -61,7 +62,7 @@
     height: 4px;
     background: linear-gradient(9deg,#fff,
     transparent);
-    
+
   }
   @keyframes shootingStar {
     0% {
