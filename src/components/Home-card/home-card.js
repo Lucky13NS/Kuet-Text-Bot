@@ -1,12 +1,12 @@
 import React from 'react';
 import './home-card.css';
-
-
+import  { Container, Row, Col }from 'react-bootstrap';
+import Clock from '../Clock/Clock';
 
 
 const home_card= () => {
   return (
-<div>
+<div className='card-background'>
 
     <div className='cardBg'>
     <div className='haderTxt'>
@@ -109,6 +109,30 @@ const home_card= () => {
         </a>    
         </section>                     
     </div>
+
+
+
+    <Container>
+                <Row>
+                    <Col>
+                        <div className=''>
+                            <div className='drive-link-text'>
+                                <h4>SHARE YOUR DRIVE LINK HERE</h4>
+                                <p>YOUR CONTIBUTION IS MUCH APPRICIATED</p>
+                                <button onClick={() => console.log('connect')} className='submit-button'>SUBMIT</button>
+                            </div>
+                        </div>
+
+                    </Col>
+                    <Col>
+                        <div className='clock'>
+                            <Clock />
+                        </div>
+
+                    </Col>
+                </Row>
+
+            </Container>
 </div>
 
   )

@@ -1,20 +1,19 @@
 .watch {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center; 
-    min-height: 50vh;
     overflow: hidden;
 
 }
 .time {
-    position: absolute;
+    /* position: absolute; */
     width: 250px;
     height: 250px;
     display: flex;
 
 }
 #time .circle  {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,14 +84,15 @@
 .timeBx {
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     width: 100%;
     color: aliceblue;
     font-family: consolas;
     gap: 15px;
     font-size: 1.5rem;
     font-weight: bold;
+    margin-left: -65px;
 }
 .timeBx #hours::after,
 .timeBx #minutes::after {
@@ -105,8 +105,8 @@
     0 0 20px var(--c);
 }
 .ap {
-    /* position: absolute; */
+
     transform: translateY(-15px);
     font-size: 0.5em;
-    right: 56px;
+    right: 54px;
 }

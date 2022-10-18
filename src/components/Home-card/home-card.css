@@ -1,14 +1,20 @@
-.homeContainer {
-    margin-top: 0;
-}
+.card-background {
+    /* position: absolute; */
+    background: RGB(33, 37, 41); 
+    width: 100%;
+    height: auto;
+    /* margin-top: 70vh; */
+    padding-top: 100px;
+    border: none;
+} 
 
 .cardBg {
     background: linear-gradient(rgba(66, 71, 80, 1),rgba(0,0,0,0.5));
     height: auto;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 2%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
     margin-bottom: 100px;
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.7);
     transition: 0.5s;
@@ -17,6 +23,7 @@
     .cardBg {
         margin-left: 0;
         margin-right: 0;
+        width: 100%;
     }
 }
 .cardBg:hover {
@@ -50,10 +57,12 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+
 }
 @media (max-width: 720px) {
     .card {
         scale: 0.8;
+
     }
 }
 .card::before {
@@ -76,6 +85,7 @@
 .card:hover {
     transform: scale(1.1);
     background: whitesmoke;
+
 }
 
 
@@ -134,5 +144,64 @@
     color: aliceblue;
     margin-left: -20px;
     margin-bottom: 50px;
+    text-decoration: none;
+}
+    /* Get rid of the text under-line */
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 
+.clock {
+    /* margin: 160px 0 100px 200px; */
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    margin-right: 50px;
+
+}
+@media (max-width: 760px) {
+    .clock {
+        scale: 1.2;
+        margin-top: 200px;
+        margin-left: 250px;
+
+    }
+}
+.green {
+    /* background-image: url('../.././images/human.png'); */
+    background: linear-gradient(RGB(1, 176, 65),RGB(136, 201, 70));
+    height: 160px;
+    width: 800px;
+    border-radius: 10px;
+    
+}
+@media (max-width: 760px) {
+    .green {
+        scale: 1;
+        
+        margin-top: 50px;
+        margin-left: 250px;
+    }
+}
+.drive-link-text {
+
+    color: whitesmoke;
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 100px;
+    /* margin-left: 150px; */
+}
+.submit-button {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    background: whitesmoke;
+    color: RGB(136, 201, 70);
+    font-weight: 800;
+    border: none;
+}

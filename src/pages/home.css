@@ -1,4 +1,4 @@
-.homeContainer {
+/* .homeContainer {
     margin-top: 0;
 
 }
@@ -15,7 +15,7 @@
 
 .green-img {
     background-image: url('../../../images/green-human.png');
-    /* background: rgba(1, 176, 65); */
+
     margin-top: 300px;
     margin-bottom: 150px;
     margin-left: auto;
@@ -25,6 +25,16 @@
     border-radius: 15px;
     background-repeat: no-repeat;
     object-fit: cover;
-
+    position: absolute;
 }
-
+.row-wrapper {
+    height: 100vh;
+}
+.row-content {
+    display: flex;
+    position: absolute;
+    margin-left: -50px;
+}
+.row-text {
+    color: aliceblue;
+} */

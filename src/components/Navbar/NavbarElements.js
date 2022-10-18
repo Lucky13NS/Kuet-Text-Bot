@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: .5rem calc((130vw - 1000px) / 10);
-  z-index: 1;
+  z-index: 200;
   top: 0;
   position: sticky;
 
@@ -105,7 +105,7 @@ export const NavBtnLinkToLogin = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    // color: #010606;
   }
 `;
 

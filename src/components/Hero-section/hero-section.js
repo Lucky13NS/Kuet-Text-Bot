@@ -29,12 +29,12 @@ const heroSection= () => {
         <Row className='align-items-center'>
           <Col xs={12} md={6} xl={7}>
             <div className=' text '>
-            <span className='tagline'>
-              KUET <span className='TEX'>TEX</span><span className='BOT'>BOT</span>
-            </span>
-            <h2>WE HELP YOU EXPLORE</h2>
-            <h2>THE <span className='academic'>ACADEMIC RESOURCES</span></h2>
-            <button onClick={() => console.log('connect')}>MORE ABOUT US</button>
+              <span className='tagline'>
+                KUET <span className='TEX'>TEX</span><span className='BOT'>BOT</span>
+              </span>
+                <h2>WE HELP YOU EXPLORE</h2>
+                <h2>THE <span className='academic'>ACADEMIC RESOURCES</span></h2>
+              <button onClick={() => console.log('connect')}>MORE ABOUT US</button>
             </div>
           </Col>
 
