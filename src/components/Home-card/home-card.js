@@ -110,16 +110,19 @@ const home_card= () => {
         </section>                     
     </div>
 
-
-
+        {/* Drive link */}
+ 
     <Container>
-                <Row>
+                <Row className='drive-link'>
                     <Col>
                         <div className=''>
                             <div className='drive-link-text'>
                                 <h4>SHARE YOUR DRIVE LINK HERE</h4>
                                 <p>YOUR CONTIBUTION IS MUCH APPRICIATED</p>
-                                <button onClick={() => console.log('connect')} className='submit-button'>SUBMIT</button>
+
+                                <div className=''>
+                                    <a href='/home' className='neon-button'> SUBMIT</a>
+                                </div>
                             </div>
                         </div>
 
@@ -131,8 +134,11 @@ const home_card= () => {
 
                     </Col>
                 </Row>
+    </Container>
 
-            </Container>
+        {/* Drive link */}
+
+
 </div>
 
   )
