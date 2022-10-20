@@ -20,11 +20,10 @@
         /* END */
 
 .banner {
-    /* position: absolute; */
     margin-top: 0;
     padding: 260px 0 100px 0;
     background-image: url('../../images/Hero-Banner.png');
-    background-position-x: center;
+    /* background-position-x: center; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;  
@@ -32,6 +31,65 @@
     overflow: hidden;
   }
 
+  .banner .tagline {
+    font-weight: 700;
+    letter-spacing: .8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: aliceblue;
+  }
+
+  .banner h2 {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    color: white;
+    white-space: nowrap;
+  }
+  .banner button {
+    background: transparent;
+    border: 1px solid #FFDC00;
+    filter: drop-shadow(2px 2px 10px #FAFF00);
+    border-radius: 5px;
+    line-height: 24px;
+    color:aliceblue;
+  }
+
+  .banner .iconImg {
+    animation: updown 3s linear infinite;
+    margin-left: 200px;
+    height: 200px;
+  }
+
+  @media (max-width: 760px) {
+    .iconImg{
+      scale: 0.8;
+    }
+}
+
+  @keyframes updown {
+      0% {
+          transform: translateY(-40px);
+      }
+      50% {
+          transform: translateY(40px);
+      }
+      100% {
+          transform: translateY(-40px);
+      }
+  }
+  .text {
+    margin-top: 60%;
+  }
+  @media (max-width: 480px) {
+    .text {
+      scale: 0.9;
+      margin-top: 0;
+    }
+}
 
          /* Shooting star animation begin */
 
@@ -42,7 +100,7 @@
     width: 5px;
     height: 5px;
     /* background-image: url('../../images/logo.png'); */
-     background: #7a91b1; 
+    background: #7a91b1; 
     border-radius: 50%;
     box-shadow: 0 0 0 5px rgba(255,255,255,0.1),
     0 0 0 8px rgba(255,255,255,0.1),
@@ -158,52 +216,5 @@
 
        /* Shooting star animation end */
 
-  .banner .tagline {
-    font-weight: 700;
-    letter-spacing: .8px;
-    font-size: 20px;
-    margin-bottom: 10px;
-    display: inline-block;
-    color: aliceblue;
-  }
-  .banner h2 {
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    line-height: 1;
-    margin-bottom: 20px;
-    display: block;
-    color: white;
-    white-space: nowrap;
-  }
-  .banner button {
-    background: transparent;
-    border: 1px solid #FFDC00;
-    filter: drop-shadow(2px 2px 10px #FAFF00);
-    border-radius: 5px;
-    line-height: 24px;
-    color:aliceblue;
-  }
-
-  .banner .iconImg {
-    animation: updown 3s linear infinite;
-    margin-left: 270px;
-    height: 200px;
-
-    
-  }
-  @keyframes updown {
-      0% {
-          transform: translateY(-40px);
-      }
-      50% {
-          transform: translateY(40px);
-      }
-      100% {
-          transform: translateY(-40px);
-      }
-  }
-  .text {
-    margin-top: 50%;
-  }
 
 

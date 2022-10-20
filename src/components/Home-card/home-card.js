@@ -136,7 +136,16 @@ const home_card= () => {
                 </Row>
     </Container>
 
-        {/* Drive link */}
+        {/* Drive link end*/}
+
+            {/* Line image */}
+            
+    <div className='line-Image-wrapper'>
+        <div className='line' />
+        <div className='line-icon-img' />
+    </div>
+            {/* Line image end */}
+
 
 
 </div>
