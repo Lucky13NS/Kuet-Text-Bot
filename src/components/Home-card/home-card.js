@@ -2,7 +2,7 @@ import React from 'react';
 import './home-card.css';
 import  { Container, Row, Col }from 'react-bootstrap';
 import Clock from '../Clock/Clock';
-
+import Footer from '../Footer/footer';
 
 const home_card= () => {
   return (
@@ -119,10 +119,9 @@ const home_card= () => {
                             <div className='drive-link-text'>
                                 <h4>SHARE YOUR DRIVE LINK HERE</h4>
                                 <p>YOUR CONTIBUTION IS MUCH APPRICIATED</p>
+                                
+                                <a href='/home' className='neon-button'> SUBMIT</a>
 
-                                <div className=''>
-                                    <a href='/home' className='neon-button'> SUBMIT</a>
-                                </div>
                             </div>
                         </div>
 
@@ -146,7 +145,7 @@ const home_card= () => {
     </div>
             {/* Line image end */}
 
-
+    <Footer />
 
 </div>
 
