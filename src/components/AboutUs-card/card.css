@@ -1,0 +1,144 @@
+
+.A_card {
+    position: relative;
+    background: rgba(48, 50, 52, 1); 
+    width: 350px;
+    height: 190px;
+    /* margin: 60px; */
+    margin: 7%;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+    display: flex;
+
+}
+
+.A_card:hover {
+    height: 450px;
+}
+.A_card .A_lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+.A_card .A_lines::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent,#45f3ff,
+    #45f3ff,#45f3ff,transparent);
+    animation: A_animate 4s linear infinite;
+} 
+@keyframes A_animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.A_card .A_lines::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #292929;
+}
+.A_card .A_imgBox {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #000;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+}
+.A_card:hover .A_imgBox {
+    width: 250px;
+    height: 250px;
+}
+.A_card .A_imgBox::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 100px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(transparent,#ff3c7b,
+    #ff3c7b,#ff3c7b,transparent);
+    animation: A_animate_2 6s linear infinite;
+}
+@keyframes A_animate_2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.A_card .A_imgBox::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: #292929;
+} 
+.A_card .A_imgBox .card_img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    filter: grayscale(1);
+    background-repeat: no-repeat;
+}
+.A_card-1 {
+    background-image: url('/src/images/AboutUs_img/nafis.jpg');
+}
+
+.A_card .A_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.A_card .A_content .A_details {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(160px);
+}
+.A_card:hover .A_content .A_details {
+    transform: translateY(0px);
+}
+.A_card .A_content .A_details h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #45f3ff;
+    line-height: 1.2em;
+}
+
+.A_card .A_content .A_details h2 span {
+    font-size: 0.75em;
+    font-weight: 500;
+    color: aliceblue;
+}
+.A_card:hover .A_content .A_details p span {
+    color: aliceblue;
+}
+
+

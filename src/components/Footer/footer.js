@@ -4,8 +4,6 @@ import './footer.css';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-
-
 const Footer= () => {
   return (
     <div className='footer'>
@@ -22,7 +20,7 @@ const Footer= () => {
           <h3 className='footer_txt_hadder'>Contact</h3>
           <div className='contact_align'>
             <p>Khulna University of Engineering and Technology(KUET)</p>
-            <p>kuet.texbot@gmail.com</p>
+            <p style={{color: "white"}}>kuet.texbot@gmail.com</p>
           </div>
 
         </div>
@@ -30,7 +28,7 @@ const Footer= () => {
         <div className='footer_socials'>
           <h3 className='footer_txt_hadder'>Socials</h3>
           <p><TelegramIcon sx={{ color: '#1CDB24'}}/> Telegram</p>
-          <p><FacebookIcon sx={{ color: '#1CDB24'}}/> Telegram</p>
+          <p><FacebookIcon sx={{ color: '#1CDB24'}}/> Facebook</p>
         </div>
 
         <div className='footer_our_app'>
@@ -39,7 +37,10 @@ const Footer= () => {
 
         <div className='footer_subscribe'>
           <h3 className='footer_txt_hadder'>Join Us</h3>
+          <div>
           <input className='footer_input' type="email" placeholder="Upload your Resume Here." />
+          </div>
+          
           <a href='/home' className='footer-button'>Upload</a>
         </div>
 

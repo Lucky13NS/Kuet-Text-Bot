@@ -4,7 +4,6 @@ import {FaBars} from 'react-icons/fa'
 import {
   Nav,
   NavLink,
-  Bars,
   NavMenu,
   NavBtnLinkToSignin,
   NavBtnLinkToLogin,
@@ -30,7 +29,7 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav scrollNav={scrollNav}>
-        <NavLink to='/'>
+        <NavLink to='/home'>
 
             <img src={require('../../images/logo.png')} alt='logo' />
 

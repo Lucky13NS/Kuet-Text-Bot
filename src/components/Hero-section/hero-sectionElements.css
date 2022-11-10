@@ -2,8 +2,7 @@
 .Container {
     position: absolute;
     color: aliceblue;
-    z-index: 20;
-
+    z-index: 20;   
 }
 
  /* TEXT COLOR */
@@ -28,7 +27,7 @@
     background-repeat: no-repeat;
     height: 70vh;  
     width: 100%; 
-    overflow: hidden;
+    overflow: hidden;   
   }
 
   .banner .tagline {
@@ -64,10 +63,16 @@
     height: 200px;
   }
 
-  @media (max-width: 760px) {
+@media (max-width: 760px) {
     .iconImg{
       scale: 0.8;
     }
+}
+@media screen and (max-width: 30em) {
+  .iconImg {
+    display: none;
+
+  }
 }
 
   @keyframes updown {
@@ -106,8 +111,6 @@
     0 0 0 8px rgba(255,255,255,0.1),
     0 0 20px rgba(255,255,255,1); 
     animation: shootingStar 1.5s linear infinite;
-
-  
   }
 
   /* Star tail */

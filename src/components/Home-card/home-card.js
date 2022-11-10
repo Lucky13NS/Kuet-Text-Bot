@@ -12,18 +12,17 @@ const home_card= () => {
     <div className='haderTxt'>
         ACADEMIC FILES
     </div>
+    
         <section class='container'>
 
         <a href='/home'>
         <div class="card">
-
                 <div class="card-image card-1">
                     <div class="card-text">
                         SLIDES & BOOKS
                     </div >
                 </div>
             </div>
-
         </a>
 
         <a href='/home'>

@@ -1,12 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
 
+
 import HeroSection from '../../src/components/Hero-section/hero-section';
 import Navbar from '../../src/components/Navbar/index';
 import Sidebar from '../../src/components/Sidebar/index';
-import Card from '../../src/components/Home-card/home-card';
+import AboutUsCard from '../components/AboutUs-card/card'
 
-  const Home = () => {
+const About_us = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -17,15 +18,14 @@ import Card from '../../src/components/Home-card/home-card';
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <div>
-                <HeroSection />
-            </div>
-            <div>
-                <Card />
-            </div>
+            <HeroSection />
+            <AboutUsCard />
+
+
+
         </>
 
     )
 }
 
-export default Home;
+export default About_us;

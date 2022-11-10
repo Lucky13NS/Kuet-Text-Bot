@@ -39,12 +39,15 @@
 .cardBg:hover {
     transform: scale(1.01);
 }
+
+
 .haderTxt {
-    color: #01B041;
+    color: rgba(28, 219, 36, 1);
     text-shadow: 1px;
     text-align: center;
     padding: 25px;
-    
+    font-size:x-large;
+    font-weight: 700;
 }
 .container {
     display: flex;
