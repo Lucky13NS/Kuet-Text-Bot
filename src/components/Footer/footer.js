@@ -33,6 +33,7 @@ const Footer= () => {
 
         <div className='footer_our_app'>
           <h3 className='footer_txt_hadder'>Our App<span className='coming_soon'> (Coming soon)</span> </h3>
+          <div className='footer_our_app_img' />
         </div>
 
         <div className='footer_subscribe'>

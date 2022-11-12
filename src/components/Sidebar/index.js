@@ -14,7 +14,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SideBarLink to='/explore' onClick={toggle}>EXPLORE</SideBarLink>
                     <SideBarLink to='/help' onClick={toggle}>HELP</SideBarLink>
                     <SideBarLink to='/submit' onClick={toggle}>SUBMIT</SideBarLink>
-                    <SideBarLink to='/about_us' onClick={toggle}>ABOUT US</SideBarLink>
+                    <SideBarLink to='/aboutUs' onClick={toggle}>ABOUT US</SideBarLink>
 
                     <SideBtnWrap>
                         <SidebarRoute to="login">LOGIN</SidebarRoute>
