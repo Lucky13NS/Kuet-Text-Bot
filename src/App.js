@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePage from './pages/home';
-import AboutUs from './pages/about_us'
+import AboutUs from './pages/about_us';
+// import StudentProfile from './pages/student-profile';
 import {
     BrowserRouter as Router,
     Routes,
@@ -21,6 +22,9 @@ function App(){
                 <Routes>
                 <Route path="/aboutUs" element={<AboutUs/>} />
                 </Routes>
+                {/* <Routes>
+                <Route path="/studentProfile" element={<StudentProfile/>} />
+                </Routes> */}
 
             </Router>
 
