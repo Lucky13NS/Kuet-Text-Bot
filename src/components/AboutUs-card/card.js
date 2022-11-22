@@ -8,6 +8,19 @@ import LanguageIcon from '@mui/icons-material/Language';
 
 //Import card image
 import Img1 from './nafis.jpg';
+import Img2 from './Mobin Mithun.JPG';
+import Img3 from './shatil.jpg';
+import Img4 from './imroz.jpg';
+import Img5 from './efty.jpg';
+import Img6 from './Mehedi Hasan.jpg';
+import Img7 from './Ehasanul Hoque Shojib.jpg';
+import Img8 from './Mukitur Rahman Mukit.jpg';
+import Img9 from './Mahir Abrar.jpg';
+import Img10 from './Mohaimeen Fardin.jpg';
+import Img11 from './Toufiq Zia.jpg';
+import Img12 from './Masrur Mortuza.jpg';
+import Img13 from './Ayon Paul.jpg';
+
 
 
 const About_card= () => {
@@ -22,7 +35,7 @@ const About_card= () => {
             <div className='A_card'>
                 <div className='A_lines' />
                 <div className='A_imgBox'>
-
+                <img src={Img2}alt="Mobin" />
                 </div>
                 <div className='A_content'>
                     <div className='A_details'>
@@ -54,7 +67,9 @@ const About_card= () => {
             <div className='A_card'>
                 <div className='A_lines' />
                 <div className='A_imgBox'>
-                    <div className='card_img A_card-1 fluid'></div>
+                    <div className='card_img A_card-1 fluid'>
+                        <img src={Img3} alt="Shati" />
+                    </div>
                 </div>
                 <div className='A_content'>
                     <div className='A_details'>
@@ -70,7 +85,9 @@ const About_card= () => {
             <div className='A_card'>
                 <div className='A_lines' />
                 <div className='A_imgBox'>
-                    <div className='card_img A_card-1 fluid'></div>
+                    <div className='card_img A_card-1 fluid'>
+                        <img src={Img4} alt ="Imroz" />
+                    </div>
                 </div>
                 <div className='A_content'>
                     <div className='A_details'>
@@ -87,7 +104,9 @@ const About_card= () => {
             <div className='A_card'>
                 <div className='A_lines' />
                 <div className='A_imgBox'>
-                    <div className='card_img A_card-1 fluid'></div>
+                    <div className='card_img A_card-1 fluid'>
+                        <img src={Img5} alt="Efty" />
+                    </div>
                 </div>
                 <div className='A_content'>
                     <div className='A_details'>
@@ -118,10 +137,10 @@ const About_card= () => {
                     <div className='A_card'>
                         <div className='A_lines' />
                         <div className='A_co-ordinator-imgBox'>
-                            <img src={Img1} alt="Nafis" />
+                            <img src={Img7} alt="Mehedi" />
                         </div>
                         <div className='A_co-ordinator-name'>
-                            MEHEDI HASAN
+                        Ehasanul Hoque Shojib
                         </div>
                         <div className='A_co-ordinator-icon'>
                             <p><TelegramIcon sx={{ color: '#45f3ff'}}/> </p>
@@ -135,7 +154,8 @@ const About_card= () => {
                     <div className='A_card'>
                         <div className='A_lines' />
                         <div className='A_co-ordinator-imgBox'>
-                            <img src={Img1} alt="Nafis" />
+                        
+                            <img src={Img6} alt="Nafis" />
                         </div>
                         <div className='A_co-ordinator-name'>
                             MEHEDI HASAN
@@ -152,10 +172,10 @@ const About_card= () => {
                     <div className='A_card'>
                         <div className='A_lines' />
                         <div className='A_co-ordinator-imgBox'>
-                            <img src={Img1} alt="Nafis" />
+                            <img src={Img8} alt="Nafis" />
                         </div>
                         <div className='A_co-ordinator-name'>
-                            MEHEDI HASAN
+                            MUKITUR RAHMAN
                         </div>
                         <div className='A_co-ordinator-icon'>
                             <p><TelegramIcon sx={{ color: '#45f3ff'}}/> </p>
@@ -168,10 +188,10 @@ const About_card= () => {
                     <div className='A_card'>
                         <div className='A_lines' />
                         <div className='A_co-ordinator-imgBox'>
-                            <img src={Img1} alt="Nafis" />
+                            <img src={Img13} alt="Nafis" />
                         </div>
                         <div className='A_co-ordinator-name'>
-                            MEHEDI HASAN
+                            AYON PAUL
                         </div>
                         <div className='A_co-ordinator-icon'>
                             <p><TelegramIcon sx={{ color: '#45f3ff'}}/> </p>
@@ -198,10 +218,10 @@ const About_card= () => {
                     <div className='A_card'>
                         <div className='A_lines' />
                         <div className='A_co-ordinator-imgBox'>
-                            <img src={Img1} alt="Nafis" />
+                            <img src={Img9} alt="Nafis" />
                         </div>
                         <div className='A_co-ordinator-name'>
-                            MEHEDI HASAN
+                            MAHIE ABRAR
                         </div>
                         <div className='A_co-ordinator-icon'>
                             <p><TelegramIcon sx={{ color: '#45f3ff'}}/> </p>
@@ -215,10 +235,10 @@ const About_card= () => {
                     <div className='A_card'>
                         <div className='A_lines' />
                         <div className='A_co-ordinator-imgBox'>
-                            <img src={Img1} alt="Nafis" />
+                            <img src={Img10} alt="Nafis" />
                         </div>
                         <div className='A_co-ordinator-name'>
-                            MEHEDI HASAN
+                            MOHAIMEEN FARDIN
                         </div>
                         <div className='A_co-ordinator-icon'>
                             <p><TelegramIcon sx={{ color: '#45f3ff'}}/> </p>
@@ -232,10 +252,10 @@ const About_card= () => {
                     <div className='A_card'>
                         <div className='A_lines' />
                         <div className='A_co-ordinator-imgBox'>
-                            <img src={Img1} alt="Nafis" />
+                            <img src={Img11} alt="Nafis" />
                         </div>
                         <div className='A_co-ordinator-name'>
-                            MEHEDI HASAN
+                            TOUFIQ ZIA
                         </div>
                         <div className='A_co-ordinator-icon'>
                             <p><TelegramIcon sx={{ color: '#45f3ff'}}/> </p>
@@ -248,10 +268,10 @@ const About_card= () => {
                     <div className='A_card'>
                         <div className='A_lines' />
                         <div className='A_co-ordinator-imgBox'>
-                            <img src={Img1} alt="Nafis" />
+                            <img src={Img12} alt="Nafis" />
                         </div>
                         <div className='A_co-ordinator-name'>
-                            MEHEDI HASAN
+                            MASHRUR MORTUZA
                         </div>
                         <div className='A_co-ordinator-icon'>
                             <p><TelegramIcon sx={{ color: '#45f3ff'}}/> </p>
